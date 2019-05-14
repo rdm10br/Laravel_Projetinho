@@ -9,13 +9,12 @@
 .ovo {
     display: block;
     position: relative;
-    padding: 3rem 0rem 0rem 3rem;
+    /*padding: 3rem 0rem 0rem 0rem;*/
     /*trbl*/
 }
 
 .row {
-    display: block;
-    float: left;
+    padding: 3rem 0rem 0rem 0rem;
 }
 
 .logo a {
@@ -37,6 +36,8 @@
     height: 130px;
 }
 
-.row .ovo .pesquisa .pesquisa_form {
-    padding: 4rem 4rem 0rem 40rem;
+.pesquisa_form {
+    float: right;
+    padding: 3rem 0rem 0rem 24rem;
+    font-size: 15pt;
 }
