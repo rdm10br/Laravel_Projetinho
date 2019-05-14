@@ -1,0 +1,25 @@
+.navbar-custom{
+    background-color: purple;
+}
+
+.nav-link a:hover {
+    color: black;
+}
+
+.ovo {
+    padding: 5rem 0px 0px 9rem;
+    /*trbl*/
+}
+
+.logo a {
+    color:black;
+    font-size: 50pt;
+}
+
+.logo a:link {
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #696969;
+}
