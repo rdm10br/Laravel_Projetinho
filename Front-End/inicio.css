@@ -7,13 +7,13 @@
 }
 
 .ovo {
-    padding: 5rem 0px 0px 9rem;
+    padding: 3rem 0rem 0rem 3rem;
     /*trbl*/
 }
 
 .logo a {
     color:black;
-    font-size: 50pt;
+    font-size: 20pt;
 }
 
 .logo a:link {
@@ -22,4 +22,10 @@
 
 .logo a:hover {
     color: #696969;
+}
+
+.imag {
+    padding: -5rem;
+    width: 150px;
+    height: 130px;
 }
