@@ -7,8 +7,15 @@
 }
 
 .ovo {
+    display: block;
+    position: relative;
     padding: 3rem 0rem 0rem 3rem;
     /*trbl*/
+}
+
+.row {
+    display: block;
+    float: left;
 }
 
 .logo a {
@@ -30,18 +37,6 @@
     height: 130px;
 }
 
-
-
-.card{
-    margin-left: 500px;
-    margin-right: 500px;
-    border-style: solid;
-
-}
-
-.card .card-header{
-    background-color: rgba(69,39,160 ,1) !important;
-}
-.card .card-header h5{
-    color: white;
+.row .ovo .pesquisa .pesquisa_form {
+    padding: 4rem 4rem 0rem 40rem;
 }
