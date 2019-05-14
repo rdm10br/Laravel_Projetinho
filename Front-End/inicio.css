@@ -7,8 +7,15 @@
 }
 
 .ovo {
+    display: block;
+    position: relative;
     padding: 3rem 0rem 0rem 3rem;
     /*trbl*/
+}
+
+.row {
+    display: block;
+    float: left;
 }
 
 .logo a {
@@ -28,4 +35,8 @@
     padding: -5rem;
     width: 150px;
     height: 130px;
+}
+
+.row .ovo .pesquisa .pesquisa_form {
+    padding: 4rem 4rem 0rem 40rem;
 }
