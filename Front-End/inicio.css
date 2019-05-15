@@ -53,7 +53,27 @@
     background-color: #7123B8;   
 }
 
-.dropdown-menu{
-    padding: 0rem 0rem 0rem 3rem;
-    /*trbl*/
+.dropdown-menu {
+    position: center;
+}
+
+.botao {
+    padding-left: 4rem;
+}
+
+.botao a{
+    color: black;
+}
+
+.botao a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+footer.rodape {
+    background-color: #331557;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
 }
