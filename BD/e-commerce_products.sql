@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `e-commerce` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `e-commerce` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `e-commerce`;
 -- MySQL dump 10.13  Distrib 8.0.16, for Win64 (x86_64)
 --
@@ -30,8 +30,11 @@ CREATE TABLE `products` (
   `preco` float NOT NULL,
   `quantidadeP` int(11) NOT NULL,
   `keywords` varchar(30) NOT NULL,
-  PRIMARY KEY (`id_p`),
-  UNIQUE KEY `id_p_UNIQUE` (`id_p`)
+  `pedidos_id_ped` int(11) NOT NULL,
+  `pedidos_cliente_id_cliente` int(11) NOT NULL,
+  PRIMARY KEY (`id_p`,`pedidos_id_ped`,`pedidos_cliente_id_cliente`),
+  UNIQUE KEY `id_p_UNIQUE` (`id_p`),
+  KEY `fk_products_pedidos1_idx` (`pedidos_id_ped`,`pedidos_cliente_id_cliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -53,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-13 23:25:46
+-- Dump completed on 2019-05-14 23:40:13
