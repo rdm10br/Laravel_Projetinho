@@ -27,7 +27,10 @@ DROP TABLE IF EXISTS `pedidos`;
 CREATE TABLE `pedidos` (
   `id_ped` int(11) NOT NULL,
   `prod_ped` varchar(800) NOT NULL,
+  `valor_pedido_unitario` float NOT NULL,
   `quantidade_prod_ped` int(11) NOT NULL,
+  `valor_total_produto` float NOT NULL,
+  `valor_total_pedido` float NOT NULL,
   `nome_cliente` varchar(45) NOT NULL,
   `cliente_id_cliente` int(11) NOT NULL,
   PRIMARY KEY (`id_ped`,`cliente_id_cliente`),
@@ -55,4 +58,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-14 23:40:13
+-- Dump completed on 2019-05-15  0:52:36

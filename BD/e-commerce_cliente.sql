@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `e-commerce` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `e-commerce`;
 -- MySQL dump 10.13  Distrib 8.0.16, for Win64 (x86_64)
 --
 -- Host: localhost    Database: e-commerce
@@ -25,17 +27,20 @@ DROP TABLE IF EXISTS `cliente`;
 CREATE TABLE `cliente` (
   `id_cliente` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
-  `Snome` varchar(50) NOT NULL,
+  `Sobre_nome` varchar(50) NOT NULL,
   `CPF` int(11) NOT NULL,
-  `num` int(11) NOT NULL,
+  `data_nascimento` date NOT NULL,
+  `sexo` varchar(1) NOT NULL,
   `email` varchar(50) NOT NULL,
+  `telefone` int(11) NOT NULL,
+  `C_senha` longtext NOT NULL,
   `endereco` varchar(800) NOT NULL,
   `estado` varchar(3) NOT NULL,
+  `CEP` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `cidade` varchar(150) NOT NULL,
+  `bairro` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `num_da_casa` int(11) NOT NULL,
   `complementos` varchar(150) NOT NULL,
-  `C_senha` longtext NOT NULL,
-  `sexo` varchar(1) NOT NULL,
-  `data_nascimento` date NOT NULL,
   PRIMARY KEY (`id_cliente`),
   UNIQUE KEY `id_cliente_UNIQUE` (`id_cliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -59,4 +64,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-15  0:02:58
+-- Dump completed on 2019-05-15  0:52:36
