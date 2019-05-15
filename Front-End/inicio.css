@@ -38,12 +38,6 @@
     height: 130px;
 }
 
-.pesquisa_form {
-    float: right;
-    padding: 3rem 0rem 0rem 24rem;
-    font-size: 15pt;
-}
-
 .navbar .nav-link{
     height:50px;
     padding-top:12px;
@@ -53,14 +47,6 @@
     background-color: #7123B8;   
 }
 
-.dropdown-menu {
-    position: center;
-}
-
-.botao {
-    padding-left: 4rem;
-}
-
 .botao a{
     color: black;
 }
@@ -68,6 +54,13 @@
 .botao a:hover {
     text-decoration: none;
     color: black;
+}
+.itens a {
+    color: black;
+}
+
+.itens a:hover {
+    color: #331557;
 }
 
 footer.rodape {
