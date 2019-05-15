@@ -1,5 +1,5 @@
 .navbar-custom{
-    background-color: rgba(69,39,160 ,1);
+    background-color: #331557;
     height: 50px;
     padding: 0px !important;
 }
@@ -50,8 +50,10 @@
 }
 
 .navbar .nav-link:hover{
-    
-    background-color: #7123B8;
-    
-    
+    background-color: #7123B8;   
+}
+
+.dropdown-menu{
+    padding: 0rem 0rem 0rem 3rem;
+    /*trbl*/
 }

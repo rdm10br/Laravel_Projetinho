@@ -22,7 +22,37 @@
                       <a class="nav-link" href="registro.html">Registro</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="login.html">Login</a>
+                      <div class="dropdown show">
+                        <a class="btn btn-custom dropdown nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Login
+                        </a>
+                        <div class="dropdown-menu">
+                          <form class="px-4 py-3">
+                            <div class="form-group">
+                              <label for="email"> Email </label>
+                              <input type="email" class="form-control" id="DropdownFormEmail2" placeholder="email@emeplo.com">
+                            </div>
+                        <div class="form-group">
+                          <label for="password"> Password </label>
+                          <input type="password" class="form-control" id="DropdownFormPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                          <label class="form-check-label" for="dropdownCheck">
+                            Lembrar de mim
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary"> Registrar </button>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Não é cadastrado? Cadastre-se aqui!</a>
+                        <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
+                      </div>
+                        <!--<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Login: </a>
+                          <a class="dropdown-item" href="#">Senha: </a>
+                        </div> -->
+                        </form>
+                      </div>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="carrinho.html">Carrinho</a>
