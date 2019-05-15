@@ -1,5 +1,7 @@
 .navbar-custom{
     background-color: rgba(69,39,160 ,1);
+    height: 50px;
+    padding: 0px !important;
 }
 
 .nav-link a:hover {
@@ -40,4 +42,16 @@
     float: right;
     padding: 3rem 0rem 0rem 24rem;
     font-size: 15pt;
+}
+
+.navbar .nav-link{
+    height:50px;
+    padding-top:12px;
+}
+
+.navbar .nav-link:hover{
+    
+    background-color: #7123B8;
+    
+    
 }
