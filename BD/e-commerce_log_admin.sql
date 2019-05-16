@@ -18,41 +18,27 @@ USE `e-commerce`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `cliente`
+-- Table structure for table `log_admin`
 --
 
-DROP TABLE IF EXISTS `cliente`;
+DROP TABLE IF EXISTS `log_admin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `cliente` (
-  `id_cliente` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(50) NOT NULL,
-  `Sobre_nome` varchar(50) NOT NULL,
-  `CPF` int(11) NOT NULL,
-  `data_nascimento` date NOT NULL,
-  `sexo` varchar(1) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `telefone` int(11) NOT NULL,
-  `C_senha` longtext NOT NULL,
-  `endereco` varchar(800) NOT NULL,
-  `estado` varchar(3) NOT NULL,
-  `CEP` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `cidade` varchar(150) NOT NULL,
-  `bairro` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `num_da_casa` int(11) NOT NULL,
-  `complementos` varchar(150) NOT NULL,
-  PRIMARY KEY (`id_cliente`),
-  UNIQUE KEY `id_cliente_UNIQUE` (`id_cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `log_admin` (
+  `id_log` int(11) NOT NULL,
+  `acao` varchar(80) NOT NULL,
+  `data_alteracao` datetime NOT NULL,
+  PRIMARY KEY (`id_log`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `cliente`
+-- Dumping data for table `log_admin`
 --
 
-LOCK TABLES `cliente` WRITE;
-/*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
-/*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
+LOCK TABLES `log_admin` WRITE;
+/*!40000 ALTER TABLE `log_admin` DISABLE KEYS */;
+/*!40000 ALTER TABLE `log_admin` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

@@ -32,11 +32,13 @@ CREATE TABLE `pedidos` (
   `valor_total_produto` float NOT NULL,
   `valor_total_pedido` float NOT NULL,
   `nome_cliente` varchar(45) NOT NULL,
-  `cliente_id_cliente` int(11) NOT NULL,
-  PRIMARY KEY (`id_ped`,`cliente_id_cliente`),
-  UNIQUE KEY `id_ped_UNIQUE` (`id_ped`),
-  KEY `fk_pedidos_cliente1_idx` (`cliente_id_cliente`),
-  CONSTRAINT `fk_pedidos_cliente1` FOREIGN KEY (`cliente_id_cliente`) REFERENCES `cliente` (`id_cliente`)
+  `desconto` int(11) NOT NULL,
+  `descição_desconto` varchar(45) NOT NULL,
+  `forma_pagamento` varchar(45) NOT NULL,
+  `status_pedido` varchar(45) NOT NULL,
+  `status_pagamento` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_ped`),
+  UNIQUE KEY `id_ped_UNIQUE` (`id_ped`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -58,4 +60,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-15  0:52:36
+-- Dump completed on 2019-05-16  0:20:17

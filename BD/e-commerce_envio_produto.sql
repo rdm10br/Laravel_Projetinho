@@ -18,33 +18,27 @@ USE `e-commerce`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `products`
+-- Table structure for table `envio_produto`
 --
 
-DROP TABLE IF EXISTS `products`;
+DROP TABLE IF EXISTS `envio_produto`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `products` (
-  `id_p` int(11) NOT NULL AUTO_INCREMENT,
-  `nomeP` varchar(800) NOT NULL,
-  `preco` float NOT NULL,
-  `quantidadeP` int(11) NOT NULL,
-  `keywords` varchar(30) NOT NULL,
-  `pedidos_id_ped` int(11) NOT NULL,
-  `pedidos_cliente_id_cliente` int(11) NOT NULL,
-  PRIMARY KEY (`id_p`,`pedidos_id_ped`,`pedidos_cliente_id_cliente`),
-  UNIQUE KEY `id_p_UNIQUE` (`id_p`),
-  KEY `fk_products_pedidos1_idx` (`pedidos_id_ped`,`pedidos_cliente_id_cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `envio_produto` (
+  `cod_rastreio` varchar(50) NOT NULL,
+  `status_envio_pedido` varchar(25) NOT NULL,
+  `previsão_entrega` date NOT NULL,
+  `dia_envio` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `products`
+-- Dumping data for table `envio_produto`
 --
 
-LOCK TABLES `products` WRITE;
-/*!40000 ALTER TABLE `products` DISABLE KEYS */;
-/*!40000 ALTER TABLE `products` ENABLE KEYS */;
+LOCK TABLES `envio_produto` WRITE;
+/*!40000 ALTER TABLE `envio_produto` DISABLE KEYS */;
+/*!40000 ALTER TABLE `envio_produto` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -56,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-15  0:52:35
+-- Dump completed on 2019-05-16  0:20:18
