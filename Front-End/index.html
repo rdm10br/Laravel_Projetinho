@@ -62,15 +62,62 @@
             </div>
         </nav>
         <!--header-->
-        <div class="container">
-        <div class="row">
-        <div class="ovo">
-            <div class="logo">
-                <a href="index.html"><img class="imag" src="imagens/logo.png" alt="logo_do_site"> Arkham Shop
-                </a>
+        <section class="header">
+            <div class="container-fluid">
+              <div class="row ml-5 pt-5">
+                <div class="logo col-4">
+                  <a href="index.html"><img class="image-logo" src="imagens/logo.png" alt="logo_do_site"> Arkham Shop</a>
+        
+                </div>
+                <div class="col-4 mt-5">
+                  <form class="form-inline ">
+                    <input class="form-control " type="search">
+                    <button class="btn btn-outline-success text-light my-2 my-sm-0" type="submit">Buscar</button>
+                  </form>
+                </div>
+                <div class="col-3">
+                  <img src="imagens/carrinho.png" alt="carrinhocompras" class="carrinho">
+                </div>
+              </div>
             </div>
-        </div>
-        </div>
+          </section>
+
+        <!-- Linha de produtos -->
+        <div class="container">
+          <div class="row justify-content-center row-custom" id="linhaItens">
+            <div class="col-1.5" id="hardware">
+              <a class="btn btn-custom" href="#" role="button" id="dropdownMenuHardware" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Hardware </a>
+            </div>
+            <div class="col-1.5" id="smartphones">
+              <a class="btn btn-custom" href="#" role="button" id="dropdownMenuSmartphones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Smartphones </a>
+            </div>
+            <div class="col-1.5" id="perifericos">
+              <a class="btn btn-custom" href="#" role="button" id="dropdownMenuPerifericos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Periféricos </a>
+            </div>
+            <div class="col-1.5" id="computadores">
+              <a class="btn btn-custom" href="#" role="button" id="dropdownMenuComputadores" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Computadores </a>
+            </div>
+            <div class="col-1.5" id="placaDeVideo">
+              <a class="btn btn-custom" href="#" role="button" id="dropdownMenuPDVideo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Placa de Vídeo </a>
+            </div>
+            <div class="col-1.5" id="monitores">
+              <a class="btn btn-custom" href="#" role="button" id="dropdownMenuMonitores" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Monitores </a>
+            </div>
+            <div class="col-1.5" id="tecladoMouse">
+              <a class="btn btn-custom" href="#" role="button" id="dropdownMenuTecladoMouse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Teclado e Mouse </a>
+            </div>
+            <div class="col-1.5" id="armazenamento">
+              <a class="btn btn-custom" href="#" role="button" id="dropdownMenuArmazenamento" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Armazenamento </a>
+            </div>
+          </div>
         </div>
   <footer class="rodape py-3">
     <div class="container">
