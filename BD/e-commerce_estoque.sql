@@ -25,15 +25,15 @@ DROP TABLE IF EXISTS `estoque`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `estoque` (
-  `id_p` int(11) NOT NULL AUTO_INCREMENT,
+  `id_estoque` int(11) NOT NULL AUTO_INCREMENT,
   `nomeP` varchar(800) NOT NULL,
   `preco` float NOT NULL,
   `quantidadeP` int(11) NOT NULL,
   `keywords` varchar(30) NOT NULL,
   `tipo_prod` varchar(45) NOT NULL,
   `url_produtos` varchar(80) NOT NULL,
-  PRIMARY KEY (`id_p`),
-  UNIQUE KEY `id_p_UNIQUE` (`id_p`)
+  PRIMARY KEY (`id_estoque`),
+  UNIQUE KEY `id_p_UNIQUE` (`id_estoque`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-16 23:05:03
+-- Dump completed on 2019-05-16 23:15:48
