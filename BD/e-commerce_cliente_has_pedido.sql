@@ -18,27 +18,29 @@ USE `e-commerce`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `log_cliente`
+-- Table structure for table `cliente_has_pedido`
 --
 
-DROP TABLE IF EXISTS `log_cliente`;
+DROP TABLE IF EXISTS `cliente_has_pedido`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `log_cliente` (
-  `id_log_cliente` int(11) NOT NULL,
-  `pesquisa_keywords_produtos` varchar(800) NOT NULL,
-  `data_alteracao` datetime NOT NULL,
-  PRIMARY KEY (`id_log_cliente`)
+CREATE TABLE `cliente_has_pedido` (
+  `cliente_id_cliente` int(11) NOT NULL,
+  `pedidos_id_ped` int(11) NOT NULL,
+  PRIMARY KEY (`cliente_id_cliente`,`pedidos_id_ped`),
+  KEY `fk_cliente_has_pedidos_pedidos1_idx` (`pedidos_id_ped`),
+  CONSTRAINT `fk_cliente_has_pedidos_cliente1` FOREIGN KEY (`cliente_id_cliente`) REFERENCES `cliente` (`id_cliente`),
+  CONSTRAINT `fk_cliente_has_pedidos_pedidos1` FOREIGN KEY (`pedidos_id_ped`) REFERENCES `pedidos` (`id_ped`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `log_cliente`
+-- Dumping data for table `cliente_has_pedido`
 --
 
-LOCK TABLES `log_cliente` WRITE;
-/*!40000 ALTER TABLE `log_cliente` DISABLE KEYS */;
-/*!40000 ALTER TABLE `log_cliente` ENABLE KEYS */;
+LOCK TABLES `cliente_has_pedido` WRITE;
+/*!40000 ALTER TABLE `cliente_has_pedido` DISABLE KEYS */;
+/*!40000 ALTER TABLE `cliente_has_pedido` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -50,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-16 23:05:05
+-- Dump completed on 2019-05-16 23:05:04

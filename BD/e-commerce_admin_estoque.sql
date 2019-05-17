@@ -30,8 +30,11 @@ CREATE TABLE `admin_estoque` (
   `CPF_admin` varchar(15) NOT NULL,
   `adicionado_estoque` int(11) NOT NULL,
   `permissão_admin` tinyint(1) NOT NULL,
-  PRIMARY KEY (`id_admin`),
-  UNIQUE KEY `id_admin` (`id_admin`)
+  `estoque_id_p` int(11) NOT NULL,
+  PRIMARY KEY (`id_admin`,`estoque_id_p`),
+  UNIQUE KEY `id_admin` (`id_admin`),
+  KEY `fk_admin_estoque_estoque_idx` (`estoque_id_p`),
+  CONSTRAINT `fk_admin_estoque_estoque` FOREIGN KEY (`estoque_id_p`) REFERENCES `estoque` (`id_p`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -53,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-16  0:20:17
+-- Dump completed on 2019-05-16 23:05:04
