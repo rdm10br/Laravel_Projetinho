@@ -18,13 +18,13 @@ USE `e-commerce`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `log_admin`
+-- Table structure for table `historico_admin`
 --
 
-DROP TABLE IF EXISTS `log_admin`;
+DROP TABLE IF EXISTS `historico_admin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `log_admin` (
+CREATE TABLE `historico_admin` (
   `id_log` int(11) NOT NULL,
   `acao` varchar(80) NOT NULL,
   `data_alteracao` datetime NOT NULL,
@@ -33,12 +33,12 @@ CREATE TABLE `log_admin` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `log_admin`
+-- Dumping data for table `historico_admin`
 --
 
-LOCK TABLES `log_admin` WRITE;
-/*!40000 ALTER TABLE `log_admin` DISABLE KEYS */;
-/*!40000 ALTER TABLE `log_admin` ENABLE KEYS */;
+LOCK TABLES `historico_admin` WRITE;
+/*!40000 ALTER TABLE `historico_admin` DISABLE KEYS */;
+/*!40000 ALTER TABLE `historico_admin` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-16 21:13:09
+-- Dump completed on 2019-05-16 21:48:29
