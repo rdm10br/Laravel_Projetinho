@@ -18,32 +18,27 @@ USE `e-commerce`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `estoque`
+-- Table structure for table `log_cliente`
 --
 
-DROP TABLE IF EXISTS `estoque`;
+DROP TABLE IF EXISTS `log_cliente`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `estoque` (
-  `id_p` int(11) NOT NULL AUTO_INCREMENT,
-  `nomeP` varchar(800) NOT NULL,
-  `preco` float NOT NULL,
-  `quantidadeP` int(11) NOT NULL,
-  `keywords` varchar(30) NOT NULL,
-  `tipo_prod` varchar(45) NOT NULL,
-  `url_produtos` varchar(80) NOT NULL,
-  PRIMARY KEY (`id_p`),
-  UNIQUE KEY `id_p_UNIQUE` (`id_p`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `log_cliente` (
+  `id_log_cliente` int(11) NOT NULL,
+  `pesquisa_keywords_produtos` varchar(800) NOT NULL,
+  `data_alteracao` datetime NOT NULL,
+  PRIMARY KEY (`id_log_cliente`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `estoque`
+-- Dumping data for table `log_cliente`
 --
 
-LOCK TABLES `estoque` WRITE;
-/*!40000 ALTER TABLE `estoque` DISABLE KEYS */;
-/*!40000 ALTER TABLE `estoque` ENABLE KEYS */;
+LOCK TABLES `log_cliente` WRITE;
+/*!40000 ALTER TABLE `log_cliente` DISABLE KEYS */;
+/*!40000 ALTER TABLE `log_cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -55,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-16 21:13:08
+-- Dump completed on 2019-05-16 21:13:09
