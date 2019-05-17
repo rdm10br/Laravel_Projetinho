@@ -2,6 +2,7 @@
     background-color: #331557;
     height: 50px;
     padding: 0px !important;
+    position: fixed;
 }
 
 .nav-link a:hover {
@@ -45,7 +46,7 @@
     padding-top:12px;
 }
 
-.navbar .nav-link:hover{
+.nav-link:hover{
     background-color: #7123B8;
 }
 
@@ -89,5 +90,14 @@ footer.rodape {
 }
 
 #linha-itens {
-    padding-top: 0px;
+    padding-top: 0px;     
+}
+
+div#linhaItens {
+    border: 2px solid;
+    padding: 3px;
+    border-radius: 25px;
+    padding: 0px !important;
+    height: 45px;
+    width: 100%;
 }
