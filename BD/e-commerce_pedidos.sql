@@ -37,8 +37,11 @@ CREATE TABLE `pedidos` (
   `forma_pagamento` varchar(45) NOT NULL,
   `status_pedido` varchar(45) NOT NULL,
   `status_pagamento` tinyint(4) NOT NULL,
-  PRIMARY KEY (`id_ped`),
-  UNIQUE KEY `id_ped_UNIQUE` (`id_ped`)
+  `estoque_id_pedidos` int(11) NOT NULL,
+  PRIMARY KEY (`id_ped`,`estoque_id_pedidos`),
+  UNIQUE KEY `id_ped_UNIQUE` (`id_ped`),
+  KEY `fk_pedidos_estoque1_idx` (`estoque_id_pedidos`),
+  CONSTRAINT `fk_pedidos_estoque1` FOREIGN KEY (`estoque_id_pedidos`) REFERENCES `estoque` (`id_p`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -60,4 +63,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-16 21:13:08
+-- Dump completed on 2019-05-16 23:05:05

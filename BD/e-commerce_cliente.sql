@@ -41,8 +41,11 @@ CREATE TABLE `cliente` (
   `bairro` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `num_da_casa` int(11) NOT NULL,
   `complementos` varchar(150) NOT NULL,
-  PRIMARY KEY (`id_cliente`),
-  UNIQUE KEY `id_cliente_UNIQUE` (`id_cliente`)
+  `historico_cliente_id_log_cliente` int(11) NOT NULL,
+  PRIMARY KEY (`id_cliente`,`historico_cliente_id_log_cliente`),
+  UNIQUE KEY `id_cliente_UNIQUE` (`id_cliente`),
+  KEY `fk_cliente_historico_cliente1_idx` (`historico_cliente_id_log_cliente`),
+  CONSTRAINT `fk_cliente_historico_cliente1` FOREIGN KEY (`historico_cliente_id_log_cliente`) REFERENCES `log_cliente` (`id_log_cliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -64,4 +67,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-16 21:48:30
+-- Dump completed on 2019-05-16 23:05:05
