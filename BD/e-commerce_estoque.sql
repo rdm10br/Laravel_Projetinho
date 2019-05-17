@@ -31,6 +31,7 @@ CREATE TABLE `estoque` (
   `quantidadeP` int(11) NOT NULL,
   `keywords` varchar(30) NOT NULL,
   `tipo_prod` varchar(45) NOT NULL,
+  `url_produtos` varchar(80) NOT NULL,
   PRIMARY KEY (`id_p`),
   UNIQUE KEY `id_p_UNIQUE` (`id_p`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -54,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-16  0:20:17
+-- Dump completed on 2019-05-16 21:13:08
