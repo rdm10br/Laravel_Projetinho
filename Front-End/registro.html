@@ -52,7 +52,7 @@
 
         }
 
-        footer.rodape {
+        footer.rodape1 {
             background-color: #331557;
             
         }
@@ -63,36 +63,52 @@
 <body>
 
     <body id="corpo">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Arkham Shop</a>
-                <div class="collapse navbar-collapse" id="navbarResponsivo">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="registro.html">Registro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="carrinho.html">Carrinho</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--header-->
-        <div class="container">
-            <div class="row">
-                <div class="ovo">
-                    <div class="logo">
-                        <a href="index.html"><img class="imag" src="imagens/logo.png" alt="logo_do_site"> Arkham Shop
-                        </a>
+            <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">Arkham Shop</a>
+                        <div class="collapse navbar-collapse" id="navbarResponsivo">
+                          <ul class="navbar-nav ml-auto">                    
+                            <li class="nav-item active">
+                              <div class="dropdown show">
+                                <a class="btn btn-custom nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Login/Registro </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                  <form class="py-3 px-2">
+                                    <div class="form-group">
+                                      <label for="email"> Email </label>
+                                      <input type="email" class="form-control" id="DropdownFormEmail2" placeholder="email@emeplo.com">
+                                    </div>
+                                <div class="form-group">
+                                  <label for="password"> Password </label>
+                                  <input type="password" class="form-control" id="DropdownFormPassword1" placeholder="Password">
+                                </div>
+                                <div class="botao">
+                                <button type="submit" class="btn btn-custom"> <a class="btnLogar" href="index.html">
+                                Logar </a> </button>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                      Lembrar de mim
+                                    </label>
+                                  </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="itens">
+                                <a class="dropdown-item" href="registro.html">Não é cadastrado? <u>Cadastre-se</u> aqui!</a>
+                                <a class="dropdown-item" href="registro.html">Esqueceu sua senha?</a>
+                                </div>
+                              </div>
+                              </form>
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="carrinho.html">Carrinho</a>
+                            </li>
+                          </ul>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
+                </nav>
+        
         <div class="card mt-5">
             <div class="card-header">
                 <h5 class="mb-0 text-center">
@@ -228,7 +244,7 @@
         </div>
 
 
-        <footer class="rodape py-3">
+        <footer class="rodape1 py-3">
             <div class="container">
                 <p class="m-0 text-center text-white">Ta saindoooo &copy; Arkham Shop 2019</p>
             </div>
