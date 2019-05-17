@@ -32,7 +32,7 @@ CREATE TABLE `envio_produto` (
   `pedidos_id_ped` int(11) NOT NULL,
   `pedidos_estoque_id_p` int(11) NOT NULL,
   PRIMARY KEY (`pedidos_id_ped`,`pedidos_estoque_id_p`),
-  CONSTRAINT `fk_envio_produto_pedidos1` FOREIGN KEY (`pedidos_id_ped`, `pedidos_estoque_id_p`) REFERENCES `pedidos` (`id_ped`, `estoque_id_pedidos`)
+  CONSTRAINT `fk_envio_produto_pedidos1` FOREIGN KEY (`pedidos_id_ped`, `pedidos_estoque_id_p`) REFERENCES `pedidos` (`id_ped`, `estoque_id_estoque`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-16 23:05:05
+-- Dump completed on 2019-05-16 23:15:51
