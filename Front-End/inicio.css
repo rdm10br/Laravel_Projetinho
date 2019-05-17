@@ -1,0 +1,103 @@
+.navbar-custom{
+    background-color: #331557;
+    height: 50px;
+    padding: 0px !important;
+    position: fixed;
+}
+
+.nav-link a:hover {
+    color: black;
+}
+
+.ovo {
+    display: block;
+    position: relative;
+    /*padding: 3rem 0rem 0rem 0rem;/
+    /trbl*/
+}
+
+.logo a {
+    color:black;
+    font-size: 20pt;
+}
+
+.logo a:link {
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #696969;
+}
+
+.image-logo {
+
+    width: 150px;
+    height: 130px;
+}
+
+.carrinho{
+
+    width: 200px;
+    height: 170px;
+}
+
+.navbar .nav-link{
+    height:50px;
+    padding-top:12px;
+}
+
+.nav-link:hover{
+    background-color: #7123B8;
+}
+
+.botao a{
+    color: black;
+}
+
+.botao a:hover {
+    text-decoration: none;
+    color: black;
+}
+.itens a {
+    color: black;
+}
+
+.itens a:hover {
+    color: #331557;
+}
+
+footer.rodape {
+    background-color: #331557;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-itensmenu a{
+    color: black;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+.header .btn {
+    background-color: #331557;
+}
+
+.row-custom {
+    background-color: #331557;
+}
+
+#linha-itens {
+    padding-top: 0px;     
+}
+
+div#linhaItens {
+    border: 2px solid;
+    padding: 3px;
+    border-radius: 25px;
+    padding: 0px !important;
+    height: 45px;
+    width: 100%;
+}

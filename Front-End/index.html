@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arkham Shop</title>
+    <link rel="shortcut icon" href="imagens/logoIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body id="corpo">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Arkham Shop</a>
+                <div class="collapse navbar-collapse" id="navbarResponsivo">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="registro.html">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="dropdown show">
+                        <a class="btn btn-custom nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Login </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <form class="py-3 px-2">
+                            <div class="form-group">
+                              <label for="email"> Email </label>
+                              <input type="email" class="form-control" id="DropdownFormEmail2" placeholder="email@emeplo.com">
+                            </div>
+                        <div class="form-group">
+                          <label for="password"> Password </label>
+                          <input type="password" class="form-control" id="DropdownFormPassword1" placeholder="Password">
+                        </div>
+                        <div class="botao">
+                        <button type="submit" class="btn btn-custom"> <a class="btnLogar" href="index.html">
+                        Logar </a> </button>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck">
+                              Lembrar de mim
+                            </label>
+                          </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="itens">
+                        <a class="dropdown-item" href="registro.html">Não é cadastrado? Cadastre-se aqui!</a>
+                        <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
+                        </div>
+                      </div>
+                      </form>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="carrinho.html">Carrinho</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--header-->
+        <section class="header">
+            <div class="container-fluid">
+              <div class="row ml-5 pt-5">
+                <div class="logo col-4">
+                  <a href="index.html"><img class="image-logo" src="imagens/logo.png" alt="logo_do_site"> Arkham Shop</a>
+        
+                </div>
+                <div class="col-4 mt-5">
+                  <form class="form-inline ">
+                    <input class="form-control " type="search">
+                    <button class="btn btn-outline-success text-light my-2 my-sm-0" type="submit">Buscar</button>
+                  </form>
+                </div>
+                <div class="col-3">
+                  <a href="carrinho.html"><img src="imagens/carrinho.png" alt="carrinhocompras" class="carrinho"></a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- Linha de produtos -->
+        <div class="container">
+          <div class="row justify-content-center row-custom" id="linhaItens">
+            <div class="dropdown show col-1.5 text-light" id="hardware">
+              <a class="btn btn-custom nav-link text-light" role="button" id="dropdownMenuHardware" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Hardware </a>
+              <div class="dropdown-menu dropdown-menu-left">
+                <form class="py-2 px-2">
+                  <div class="form-group">
+                    <a class="dropdown-item" href="#"> Placa mãe </a>
+                    <a class="dropdown-item" href="#"> Placa de video </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-1.5" id="smartphones">
+              <a class="btn btn-custom nav-link text-light" role="button" id="dropdownMenuSmartphones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Smartphones </a>
+              <div class="dropdown-menu dropdown-menu-left">
+                <form class="py-2 px-2">
+                  <div class="form-group">
+                    <a class="dropdown-item" href="#"> Samsung </a>
+                    <a class="dropdown-item" href="#"> Xiaomi </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-1.5" id="perifericos">
+              <a class="btn btn-custom nav-link text-light" role="button" id="dropdownMenuPerifericos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Periféricos </a>
+              <div class="dropdown-menu dropdown-menu-left">
+                <form class="py-2 px-2">
+                  <div class="form-group">
+                    <a class="dropdown-item" href="#"> Mouses de Challenger </a>
+                    <a class="dropdown-item" href="#"> Fone de Bronze</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-1.5" id="computadores">
+              <a class="btn btn-custom nav-link text-light" role="button" id="dropdownMenuComputadores" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Computadores </a>
+              <div class="dropdown-menu dropdown-menu-left">
+                <form class="py-2 px-2">
+                  <div class="form-group">
+                    <a class="dropdown-item" href="#"> PC para Prata</a>
+                    <a class="dropdown-item" href="#"> PC para D4 Afundado</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-1.5" id="placaDeVideo">
+              <a class="btn btn-custom nav-link text-light" role="button" id="dropdownMenuPDVideo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Placa de Vídeo </a>
+              <div class="dropdown-menu dropdown-menu-left">
+                  <form class="py-2 px-2">
+                    <div class="form-group">
+                      <a class="dropdown-item" href="#"> RTX-2060  </a>
+                      <a class="dropdown-item" href="#"> RTX-2080 </a>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <div class="col-1.5" id="monitores">
+              <a class="btn btn-custom nav-link text-light" role="button" id="dropdownMenuMonitores" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Monitores </a>
+              <div class="dropdown-menu dropdown-menu-left">
+                  <form class="py-2 px-2">
+                    <div class="form-group">
+                      <a class="dropdown-item" href="#"> LG </a>
+                      <a class="dropdown-item" href="#"> ASUS ROG ULTRA WIDE </a>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <div class="col-1.5" id="tecladoMouse">
+              <a class="btn btn-custom nav-link text-light" role="button" id="dropdownMenuTecladoMouse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Teclado e Mouse </a>
+              <div class="dropdown-menu dropdown-menu-left">
+              <form class="py-2 px-2">
+                  <div class="form-group">
+                    <a class="dropdown-item" href="#"> RAZER </a>
+                    <a class="dropdown-item" href="#"> REDDRAGON </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-1.5" id="armazenamento">
+              <a class="btn btn-custom nav-link text-light" role="button" id="dropdownMenuArmazenamento" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Armazenamento </a>
+              <div class="dropdown-menu dropdown-menu-left">
+              <form class="py-2 px-2">
+                  <div class="form-group">
+                    <a class="dropdown-item" href="#"> SSD </a>
+                    <a class="dropdown-item" href="#"> MICRO SD </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  <footer class="rodape py-3">
+    <div class="container">
+      <p class="m-0 text-center text-white">Ta saindoooo &copy; Arkham Shop 2019</p>
+        </div>
+          <!-- /.container -->
+  </footer>
+</body>
+</html>
