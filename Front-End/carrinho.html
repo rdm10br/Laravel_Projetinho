@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-    <html lang="pt-BR">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Arkham Shop</title>
-            <link rel="shortcut icon" href="" type="">
-            <link rel="stylesheet" href="inicio.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        </head>
-        <body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arkham Shop</title>
+    <link rel="shortcut icon" href="imagens/logoIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body id="corpo">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Arkham Shop</a>
+                <div class="collapse navbar-collapse" id="navbarResponsivo">
+                  <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                      <div class="dropdown show">
+                        <a class="btn btn-custom nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Login/Registro </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <form class="py-3 px-2">
+                            <div class="form-group">
+                              <label for="email"> Email </label>
+                              <input type="email" class="form-control" id="DropdownFormEmail2" placeholder="email@emeplo.com">
+                            </div>
+                        <div class="form-group">
+                          <label for="password"> Password </label>
+                          <input type="password" class="form-control" id="DropdownFormPassword1" placeholder="Password">
+                        </div>
+                        <div class="botao">
+                        <button type="submit" class="btn btn-custom"> <a class="btnLogar" href="index.html">
+                        Logar </a> </button>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck">
+                              Lembrar de mim
+                            </label>
+                          </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="itens">
+                        <a class="dropdown-item" href="registro.html">Não é cadastrado? Cadastre-se aqui!</a>
+                        <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
+                        </div>
+                      </div>
+                      </form>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="carrinho.html">Carrinho</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+        <footer class="rodape py-3">
+            <div class="container">
+              <p class="m-0 text-center text-white">Ta saindoooo &copy; Arkham Shop 2019</p>
+                </div>
+                  <!-- /.container -->
+          </footer>
         </body>
-    </html>
+        </html>
