@@ -1,71 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Arkham Shop</title>
     <link rel="shortcut icon" href="imagens/logoIcon.ico" type="image/x-icon">
     <link rel="stylesheet" href="inicio.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body id="corpo">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Arkham Shop</a>
-                <div class="collapse navbar-collapse" id="navbarResponsivo">
-                  <ul class="navbar-nav ml-auto">
-                    
-                    <li class="nav-item">
-                      <div class="dropdown show">
-                        <a class="btn btn-custom nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Login/Registro </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <form class="py-3 px-2">
-                            <div class="form-group">
-                              <label for="email"> Email </label>
-                              <input type="email" class="form-control" id="DropdownFormEmail2" placeholder="email@emeplo.com">
-                            </div>
-                        <div class="form-group">
-                          <label for="password"> Password </label>
-                          <input type="password" class="form-control" id="DropdownFormPassword1" placeholder="Password">
-                        </div>
-                        <div class="botao">
-                        <button type="submit" class="btn btn-custom"> <a class="btnLogar" href="index.html">
-                        Logar </a> </button>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                            <label class="form-check-label" for="dropdownCheck">
-                              Lembrar de mim
-                            </label>
-                          </div>
-                        <div class="dropdown-divider"></div>
-                        <div class="itens">
-                        <a class="dropdown-item" href="registro.html">Não é cadastrado? Cadastre-se aqui!</a>
-                        <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
-                        </div>
-                      </div>
-                      </form>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="carrinho.html">Carrinho</a>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Arkham Shop</a>
+            <div class="collapse navbar-collapse" id="navbarResponsivo">
+                <ul class="navbar-nav ml-auto">
 
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-custom nav-link" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Login/Registro
+
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <form class="py-3 px-2">
+                                    <div class="form-group">
+                                        <label for="email"> Email </label>
+                                        <input type="email" class="form-control" id="DropdownFormEmail2"
+                                            placeholder="email@emeplo.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password"> Password </label>
+                                        <input type="password" class="form-control" id="DropdownFormPassword1"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="botao">
+                                        <button type="submit" class="btn btn-custom"> <a class="btnLogar"
+                                                href="index.html">
+                                                Logar </a> </button>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                            Lembrar de mim
+                                        </label>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="itens">
+                                        <a class="dropdown-item" href="registro.html">Não é cadastrado? Cadastre-se
+                                            aqui!</a>
+                                        <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
+                                    </div>
+                            </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html">Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container bg-light mt-5 pt-3 mr-5">
+            <div class="row">
+                
+                        <h2>Carrinho de compras</h2>    
+                
+                   
+            </div>
+            
+        </div>
+
+        <div class="container-fluid" id="corpocarrinho">
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width: 35%" scope="col">Produtos</th>
+                        <th style="width: 10%" scope="col"> Quantidade</th>
+                        <th style="width: 10%" scope="col">Preço Unitário</th>
+                        <th style="width: 10%" scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img width="200px;" height="150px;" src="imagens/i9zinho.png" alt="i9">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6>PROCESSADOR INTEL CORE I9 9900K 3.60GHZ (5.0GHZ TURBO), 9ª GERAÇÃO, 8-CORE
+                                        16-THREAD, LGA 1151, BX80684I99900K</h6>
+                                </div>
+
+                            </div>
+                        </th>
+                        <td>
+                            <div style="width:100%; margin:3px; overflow:hidden;">
+
+                                <div style="float:left; padding:20px 10px 20px 0; ">
+                                    <form name="form_carrinho_quantidade_85197" method="POST" action="atualizar.cgi">
+
+                                        <input name="produto_quantidade" type="text" id="produto_quantidade" size="2"
+                                            style="width:25px; text-align:center;" value="1">
+
+                                    </form>
+                                </div>
+
+                                <div style="float:right; padding:10px 0 5px 0;"><img src="imagens/iconatt.png"
+                                        width="20" height="20"> <a onclick="">Atualizar</a></div>
+
+                                <div style="float:right; padding:2px 18px 0 0;"><a target="_top" onclick=""></a><img
+                                        src="imagens/download.png" width="15" height="15" border="0"> Excluir</a></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div align=center>
+                                <h6>R$ 999,99</h6>
+                            </div>
+                        </td>
+                        <td>
+                            <div align=center>
+                                <h6>R$ 999,99</h6>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img width="170px;" height="150px;" src="imagens/gt1030.jpg"
+                                        alt="gt1030">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6>Placa de Vídeo Gigabyte NVIDIA GeForce GT 1030 2G, GDDR5 - GV-N1030D5-2GL</h6>
+                                </div>
+
+                            </div>
+                        </th>
+                        <td>
+                            <div style="width:100%; margin:3px; overflow:hidden;">
+
+                                <div style="float:left; padding:20px 10px 20px 0; ">
+                                    <form name="form_carrinho_quantidade_85197" method="POST" action="atualizar.cgi">
+
+                                        <input name="produto_quantidade" type="text" id="produto_quantidade" size="2"
+                                            style="width:25px; text-align:center;" value="1">
+
+                                    </form>
+                                </div>
+
+                                <div style="float:right; padding:10px 0 5px 0;"><img src="imagens/iconatt.png"
+                                        width="20" height="20"> <a onclick="">Atualizar</a></div>
+
+                                <div style="float:right; padding:2px 18px 0 0;"><a target="_top" onclick=""></a><img
+                                        src="imagens/download.png" width="15" height="15" border="0"> Excluir</a></div>
+                            </div>
+
+
+                        </td>
+                        <td>
+                            <div align="center">
+                                <h6>
+                                    R$ 1500,00
+                                </h6>
+                            </div>
+                        </td>
+                        <td>
+                            <div align="center">
+                                <h6>
+                                    R$ 1500,00
+                                </h6>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                                <div class="row">
+                                        <div class="col-6">
+                                            <img width="250px;" height="150px;" src="imagens/tecladinho.jpg"
+                                                alt="gt1030">
+                                        </div>
+                                        <div class="col-6 mt-4">
+                                            <h6>Razer BlackWidow Chroma clicky Mecânico teclado Gaming</h6>
+                                        </div>
         
-        <footer class="rodape py-3">
-            <div class="container">
-              <p class="m-0 text-center text-white">Ta saindoooo &copy; Arkham Shop 2019</p>
-                </div>
-                  <!-- /.container -->
-          </footer>
-        </body>
-        </html>
+                                    </div>
+                        </th>
+                        <td>
+                            <div style="width:100%; margin:3px; overflow:hidden;">
+
+                                <div style="float:left; padding:20px 10px 20px 0; ">
+                                    <form name="form_carrinho_quantidade_85197" method="POST" action="atualizar.cgi">
+
+                                        <input name="produto_quantidade" type="text" id="produto_quantidade" size="2"
+                                            style="width:25px; text-align:center;" value="1">
+
+                                    </form>
+                                </div>
+
+                                <div style="float:right; padding:10px 0 5px 0;"><img src="imagens/iconatt.png"
+                                        width="20" height="20"> <a onclick="">Atualizar</a></div>
+
+                                <div style="float:right; padding:2px 18px 0 0;"><a target="_top" onclick=""></a><img
+                                        src="imagens/download.png" width="15" height="15" border="0"> Excluir</a></div>
+                            </div>
+
+                        </td>
+                        <td><div align="center">
+                                <h6>
+                                    R$ 1500,00
+                                </h6>
+                            </div>
+                        </td>
+                        <td>
+                                <div align="center">
+                                        <h6>
+                                            R$ 1500,00
+                                        </h6>
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+    <footer class="rodape py-3">
+        <div class="container">
+            <p class="m-0 text-center text-white">Ta saindoooo &copy; Arkham Shop 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+</body>
+
+</html>

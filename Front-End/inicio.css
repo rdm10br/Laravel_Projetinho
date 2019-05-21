@@ -68,7 +68,7 @@
 
 footer.rodape {
     background-color: #331557;
-    position: fixed;
+    position: ;
     bottom: 0;
     text-align: center;
     width: 100%;
@@ -101,3 +101,15 @@ div#linhaItens {
     height: 45px;
     width: 100%;
 }
+
+#corpocarrinho{
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+}
+
+a#testeatt{
+    padding-left: 15px;
+}
+
