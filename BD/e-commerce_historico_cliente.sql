@@ -29,11 +29,12 @@ CREATE TABLE `historico_cliente` (
   `data_alteracao` datetime NOT NULL,
   `estoque_id_estoque` int(11) NOT NULL,
   `log_cliente_keywords` varchar(30) NOT NULL,
-  PRIMARY KEY (`id_log_cliente`,`log_cliente_keywords`,`estoque_id_estoque`),
+  `hist_id_cliente` int(11) NOT NULL,
+  PRIMARY KEY (`id_log_cliente`,`log_cliente_keywords`,`estoque_id_estoque`,`hist_id_cliente`),
   UNIQUE KEY `id_log_cliente_UNIQUE` (`id_log_cliente`) /*!80000 INVISIBLE */,
   KEY `fk_log_cliente_estoque1_idx` (`estoque_id_estoque`),
-  KEY `fk_log_cliente_estoque_idx` (`log_cliente_keywords`),
-  KEY `fk_log_cliente_estoque2_idx` (`log_cliente_keywords`),
+  KEY `fk_log_cliente_cliente_idx` (`hist_id_cliente`),
+  CONSTRAINT `fk_log_cliente_cliente` FOREIGN KEY (`hist_id_cliente`) REFERENCES `cliente` (`id_cliente`),
   CONSTRAINT `fk_log_cliente_estoque1` FOREIGN KEY (`estoque_id_estoque`) REFERENCES `estoque` (`id_estoque`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -56,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-28  0:03:21
+-- Dump completed on 2019-05-28  0:12:55
