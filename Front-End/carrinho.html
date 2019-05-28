@@ -27,11 +27,11 @@
             <div class="collapse navbar-collapse" id="navbarResponsivo">
                 <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <div class="dropdown show">
                             <a class="btn btn-custom nav-link" href="#" role="button" id="dropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Login/Registro
+                                Login / Registro
 
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
@@ -67,7 +67,7 @@
                             </form>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="carrinho.html">Carrinho</a>
                     </li>
                 </ul>
@@ -75,12 +75,31 @@
         </div>
     </nav>
 
+
+
     <main>
-
-
         <div class="container-fluid" id="corpocarrinho">
-            <div class="bg-light mb-5">
-                <h2>Carrinho de compras</h2>
+            <div class="mb-5">
+                    <section>
+                <div class="jumbotron p-3 my-1 bg-light">
+                    <h1 class="display-4">Carrinho de compras</h1>
+
+                </div>
+                <div>
+                    <ol style="list-style-type:none;" class=" container-fluid bg-light">
+                        <div class="row justify-content-md-center">                    
+                        <li class="p-3" id="cor1"> Você está aqui <br><img src="imagens/carro.png"
+                                style="width:70px;height:70px"></li>
+                                <li class="pt-4 pl-2 pr-4" > <img src="imagens/arrow.png" style="width:80px;height:80px;" alt=""> </li>
+                        <li class=" p-3 ">Pagamento <br> <img src="imagens/cardscinza.png"
+                                style="width:70px;height:70px;" alt=""> </li>
+                                <li class="pt-4 pl-2 pr-4" > <img src="imagens/arrow.png" style="width:80px;height:80px;" alt=""> </li>
+                        <li class="p-3">Concluído <br> <img src="imagens/okcinza.png" style="width: 70px;widht:70px;"
+                                alt=""></li>
+                            </div>
+                    </ol>
+                </div>
+            </section>
             </div>
 
             <table class="table table-bordered">
@@ -234,6 +253,8 @@
                     </tr>
                 </tbody>
             </table>
+
+            <button type="button" class="btn btn-sm">Limpar Carrinho</button>
 
         </div>
     </main>
