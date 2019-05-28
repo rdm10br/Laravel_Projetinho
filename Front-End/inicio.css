@@ -113,3 +113,12 @@ a#testeatt{
     padding-left: 15px;
 }
 
+#bg-custom{
+    background: #7123B8;
+}
+
+#bg-custom a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
