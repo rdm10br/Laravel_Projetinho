@@ -16,34 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `historico_cliente`
+-- Table structure for table `carrinho`
 --
 
-DROP TABLE IF EXISTS `historico_cliente`;
+DROP TABLE IF EXISTS `carrinho`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `historico_cliente` (
-  `id_log_cliente` int(11) NOT NULL,
-  `data_alteracao` datetime NOT NULL,
+CREATE TABLE `carrinho` (
+  `id_carrinho` int(11) NOT NULL,
   `estoque_id_estoque` int(11) NOT NULL,
-  `log_cliente_keywords` varchar(30) NOT NULL,
-  `hist_id_cliente` int(11) NOT NULL,
-  PRIMARY KEY (`id_log_cliente`,`log_cliente_keywords`,`estoque_id_estoque`,`hist_id_cliente`),
-  UNIQUE KEY `id_log_cliente_UNIQUE` (`id_log_cliente`) /*!80000 INVISIBLE */,
-  KEY `fk_log_cliente_estoque1_idx` (`estoque_id_estoque`),
-  KEY `fk_log_cliente_cliente_idx` (`hist_id_cliente`),
-  CONSTRAINT `fk_log_cliente_cliente` FOREIGN KEY (`hist_id_cliente`) REFERENCES `cliente` (`id_cliente`),
-  CONSTRAINT `fk_log_cliente_estoque1` FOREIGN KEY (`estoque_id_estoque`) REFERENCES `estoque` (`id_estoque`)
+  PRIMARY KEY (`id_carrinho`,`estoque_id_estoque`),
+  UNIQUE KEY `id_carrinho_UNIQUE` (`id_carrinho`),
+  KEY `fk_carrinho_estoque1_idx` (`estoque_id_estoque`),
+  CONSTRAINT `fk_carrinho_estoque1` FOREIGN KEY (`estoque_id_estoque`) REFERENCES `estoque` (`id_estoque`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `historico_cliente`
+-- Dumping data for table `carrinho`
 --
 
-LOCK TABLES `historico_cliente` WRITE;
-/*!40000 ALTER TABLE `historico_cliente` DISABLE KEYS */;
-/*!40000 ALTER TABLE `historico_cliente` ENABLE KEYS */;
+LOCK TABLES `carrinho` WRITE;
+/*!40000 ALTER TABLE `carrinho` DISABLE KEYS */;
+/*!40000 ALTER TABLE `carrinho` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -55,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-30 18:53:43
+-- Dump completed on 2019-05-30 18:53:46
