@@ -25,9 +25,12 @@ DROP TABLE IF EXISTS `carrinho`;
 CREATE TABLE `carrinho` (
   `id_carrinho` int(11) NOT NULL,
   `estoque_id_estoque` int(11) NOT NULL,
-  PRIMARY KEY (`id_carrinho`,`estoque_id_estoque`),
+  `cliente_id_cliente` int(11) NOT NULL,
+  PRIMARY KEY (`id_carrinho`,`estoque_id_estoque`,`cliente_id_cliente`),
   UNIQUE KEY `id_carrinho_UNIQUE` (`id_carrinho`),
   KEY `fk_carrinho_estoque1_idx` (`estoque_id_estoque`),
+  KEY `fk_carrinho_cliente_idx` (`cliente_id_cliente`),
+  CONSTRAINT `fk_carrinho_cliente` FOREIGN KEY (`cliente_id_cliente`) REFERENCES `cliente` (`id_cliente`),
   CONSTRAINT `fk_carrinho_estoque1` FOREIGN KEY (`estoque_id_estoque`) REFERENCES `estoque` (`id_estoque`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -50,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-30 18:53:46
+-- Dump completed on 2019-06-01  0:20:21
