@@ -1,4 +1,3 @@
 function login(){
-   alert("aiai");
-
+   window.alert("aiai");
 }
