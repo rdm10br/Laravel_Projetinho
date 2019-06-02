@@ -56,6 +56,9 @@
                     <li class="nav-item active">
                       <a class="nav-link" id="nana" href="carrinho.html">Carrinho</a>
                     </li>
+                    <li class="nav-item active"> 
+                        <a class="nav-link btn btn-custom" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"> Cadastrar </a>
+                    </li>
                   </ul>
                 </div>
             </div>
@@ -212,6 +215,62 @@
             </div>
           </div>
         </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel"> Cadastrar Produto </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="cadastro_produto.php"> 
+            <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Nome do produto:</label>
+                <input name="nome" type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+            <label for="message-text" class="col-form-label">Descrição do produto:</label>
+                <textarea name="descricao" class="form-control" id="message-text"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Imagem do produto:</label>
+                <input name="imagem" type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-success"> Cadastrar </button>
+        </div>
+        </div>
+        </div>
+      </div>
+ 
+<!-- ADICIONAR PRODUTOS (RESERVA)
+  <div class="Produtos">
+    <div class="H-box">
+      <div class="H-img">
+      <a target="" href="index.html"></a>
+      <img src="imagens/mouse.jpg" alt="i9" border="0" width="145" height="145" valign="middle">
+      <div class="align-list">
+        <a href="carrinho.html"></a>
+        <span class="titulo"> Mouse fodido do caralho </span> <br>
+        <a href="carrinho.html"></a>
+        <span class="subtitulo"> Mousezinho de merda </span> 
+      </div>
+      <div class="precoLoja">
+        <div class="preco"> R$ 1000,00 </div>
+      </div>
+      <div class="comprar">
+        <a href="carrinho.html"> COMPRAR </a> <br>
+        <a href="carrinho.html"> DETALHES </a>
+      </div>
+    </div>
+    </div>
+  </div>
+-->
   <footer class="rodape py-3">
     <div class="container">
       <p class="m-0 text-center text-white">Ta saindoooo &copy; Arkham Shop 2019</p>
