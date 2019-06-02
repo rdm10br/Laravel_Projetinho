@@ -15,12 +15,12 @@ function login(){
    attempt --;
    return false;
   }
-  if(un == "" && pwrd== "")
-  {
-   alert('Por Favor preencha correto os campos');
-   attempt --;
-   return false;
-  }
+//   if(un == "" && pwrd== "")
+//   {
+//    alert('Por Favor preencha correto os campos');
+//    attempt --;
+//    return false;
+//   }
   if(attempt == 0)
   {
    document.getElementById("DropdownFormEmail2").disabled = true;
