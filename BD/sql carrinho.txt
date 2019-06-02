@@ -1,0 +1,13 @@
+create table if not exists 'e-commerce'.'carrinho'(
+   id_estoque_carrinho int(11) primary key not null,
+   id_cliente_carrinho int(11) primary key not null,
+   id_carrinho int(11) primary key not null,
+index 'fk_carrinho_cliente'('id_cleinte_carrinho' ASC) visible,
+index 'fk_carrinho_estoque'('id_estoque_carrinho' ASC) visible,
+unique index 'id_carrinho_unique' ('id_carrinho' ASC) invisible,
+ constraint 'fk_carrinho_estoque'
+	foregin key (id_estoque_carrinho)
+	reference 'e-commerce'.'estoque' id_estoque;
+ constraint 'fk_carrinho_cliente'
+	foregin key (id_cliente_carrinho)
+	reference 'e-commerce'.'cliente' (id_cliente))

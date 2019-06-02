@@ -16,31 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `envio_produto`
+-- Table structure for table `carrinho`
 --
 
-DROP TABLE IF EXISTS `envio_produto`;
+DROP TABLE IF EXISTS `carrinho`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `envio_produto` (
-  `cod_rastreio` varchar(50) NOT NULL,
-  `status_envio_pedido` varchar(25) NOT NULL,
-  `previsão_entrega` date NOT NULL,
-  `dia_envio` date NOT NULL,
-  `pedidos_id_ped` int(11) NOT NULL,
-  `pedidos_estoque_id_p` int(11) NOT NULL,
-  PRIMARY KEY (`pedidos_id_ped`,`pedidos_estoque_id_p`),
-  CONSTRAINT `fk_envio_produto_pedidos1` FOREIGN KEY (`pedidos_id_ped`, `pedidos_estoque_id_p`) REFERENCES `pedidos` (`id_ped`, `estoque_id_estoque`)
+CREATE TABLE `carrinho` (
+  `id_carrinho` int(11) NOT NULL,
+  `estoque_id_estoque` int(11) NOT NULL,
+  `cliente_id_cliente` int(11) NOT NULL,
+  PRIMARY KEY (`id_carrinho`,`estoque_id_estoque`,`cliente_id_cliente`),
+  UNIQUE KEY `id_carrinho_UNIQUE` (`id_carrinho`),
+  KEY `fk_carrinho_estoque1_idx` (`estoque_id_estoque`),
+  KEY `fk_carrinho_cliente_idx` (`cliente_id_cliente`),
+  CONSTRAINT `fk_carrinho_cliente` FOREIGN KEY (`cliente_id_cliente`) REFERENCES `cliente` (`id_cliente`),
+  CONSTRAINT `fk_carrinho_estoque1` FOREIGN KEY (`estoque_id_estoque`) REFERENCES `estoque` (`id_estoque`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `envio_produto`
+-- Dumping data for table `carrinho`
 --
 
-LOCK TABLES `envio_produto` WRITE;
-/*!40000 ALTER TABLE `envio_produto` DISABLE KEYS */;
-/*!40000 ALTER TABLE `envio_produto` ENABLE KEYS */;
+LOCK TABLES `carrinho` WRITE;
+/*!40000 ALTER TABLE `carrinho` DISABLE KEYS */;
+/*!40000 ALTER TABLE `carrinho` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-06-01 21:19:58
+-- Dump completed on 2019-06-01 21:19:59
