@@ -1,4 +1,5 @@
 function login(){
+  //alert('teste'); 
   var attempt = 3;
   var un = document.getElementById('DropdownFormEmail2').value;
   var pwrd = document.getElementById('DropdownFormPassword1').value;
