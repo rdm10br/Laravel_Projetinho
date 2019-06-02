@@ -1,8 +1,8 @@
 function login(){
   //alert('teste'); 
   //var attempt = 3;
-  var un = document.getElementById('DropdownFormEmail2').value;
-  var pwrd = document.getElementById('DropdownFormPassword1').value;
+  var un = document.getElementById('username').value;
+  var pwrd = document.getElementById('password').value;
   if (un == "" && pwrd == "") 
   {
    alert("Por Favor preencha corretamente o email.");
